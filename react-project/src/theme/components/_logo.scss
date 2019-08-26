@@ -1,0 +1,22 @@
+%basic {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.Logo {
+  &-text {
+    &__light {
+      color: white;
+      @extend %basic;
+    }
+
+    &__primary {
+      // color: $c-primary;
+      text-transform: uppercase;
+      @extend %basic;
+    }
+  }
+}

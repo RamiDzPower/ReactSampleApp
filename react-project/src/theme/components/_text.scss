@@ -1,0 +1,23 @@
+.text {
+  &-sub {
+    &__normal {
+      color: #A2ACAE;
+      font-weight: 400;
+    }
+  }
+
+  &-display {
+    &__normal {
+      color: #A2ACAE;
+      font-weight: 400;
+      font-size: $font-medium * 2;
+    }
+  }
+
+  &-link {
+    &__normal {
+      text-decoration: underline;
+      color: #52595E;
+    }
+  }
+}

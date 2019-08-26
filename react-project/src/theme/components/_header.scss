@@ -1,0 +1,73 @@
+$index-top: 200;
+$index-below: 100;
+
+.Header {
+  &-container {
+
+    &__cover {
+      color: white;
+      background-size: cover;
+      height: 70vh;
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        background: rgba(0, 0, 0, 0.57);
+      }
+    }
+
+    &__nav {
+      padding: $grid-gutter-width;
+      z-index: $index-top;
+      position: absolute;
+    }
+
+    &__content {
+      z-index: $index-below;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__welcomeText {
+      color: white;
+      text-align: center;
+      font-size: 40px;
+      line-height: 46px;
+      font-weight: 400;
+
+      @media (min-width: $screen-sm) {
+        font-size: 72px;
+        line-height: 90px;
+      }
+    }
+
+    &__arrowButton {
+      position: absolute;
+      bottom: 5vh;
+      padding: 15px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      box-sizing: border-box;
+
+      img {
+        width: 24px;
+      }
+    }
+
+  }
+
+  
+}
